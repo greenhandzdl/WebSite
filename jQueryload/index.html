@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery页面加载等待效果 - 源码之家</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/fakeloader.css">
+</head>
+<body>
+<!-- 代码 开始 -->
+        <div class="fakeloader"></div>
+        <div class="fakeloader"></div>
+
+        <section id="section-navigation">
+
+            <div class="container text-center">
+                <a href="demo1.html"><button class="btn-default btn-white btn-active">效果1</button></a>
+                <a href="demo2.html"><button class="btn-default btn-white">效果2</button></a>
+                <a href="demo3.html"><button class="btn-default btn-white">效果3</button></a>
+                <a href="demo4.html"><button class="btn-default btn-white">效果4</button></a>
+                <a href="demo5.html"><button class="btn-default btn-white">效果5</button></a>
+                <a href="demo6.html"><button class="btn-default btn-white">效果6</button></a>
+                <a href="demo7.html"><button class="btn-default btn-white">效果7</button></a>
+                <a href="demo8.html"><button class="btn-default btn-white">自定义图片</button></a>
+            </div>
+        </section>
+
+        <div class="container text-center">
+            <h1 style="margin-top:250px">DOM was loaded</h1>
+        </div>
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/fakeloader.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".fakeloader").fakeLoader({
+                    timeToHide:1200,
+                    bgColor:"#2ecc71",
+                    spinner:"Spinner1"
+                });
+            });
+        </script>
+<!-- 代码 结束 -->
+ <div style="text-align:center;">
+<p>来源：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+<script src="http://www.mycodes.net/js/tongji.js"></script>
+<script src="http://www.mycodes.net/js/youxia.js" type="text/javascript"></script>
+</div>
+</body>
+</html>

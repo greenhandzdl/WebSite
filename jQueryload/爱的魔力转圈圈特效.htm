@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>爱的魔力转圈圈特效</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<style>
+	body {
+		margin: 0;
+		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.5;
+		color: #fff;
+		text-align: left;
+		background-color: #212529;
+	}
+	.preloader {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-ms-grid-row-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		background-color: #232323;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 1000000;
+		padding: 15px;
+		text-align: center;
+	}
+
+	.world-load {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		border: 3px;
+		border-style: solid;
+		border-color: transparent;
+		border-top-color: #f1f1f1;
+		-webkit-animation: world 2400ms linear infinite;
+		animation: world 2400ms linear infinite;
+		z-index: 999;
+		margin: 0 auto;
+	}
+	.preload-text {
+		color: #fff;
+		margin: 60px auto;
+		text-align: center;
+		line-height: 2;
+	}
+	.world-load:before {
+		content: "";
+		position: absolute;
+		top: 7.5px;
+		left: 7.5px;
+		right: 7.5px;
+		bottom: 7.5px;
+		border-radius: 50%;
+		border: 3px;
+		border-style: solid;
+		border-color: transparent;
+		border-top-color: #f1f1f1;
+		-webkit-animation: world 2700ms linear infinite;
+		animation: world 2700ms linear infinite
+	}
+
+	.world-load:after {
+		content: "";
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+		border-radius: 50%;
+		border: 3px;
+		border-style: solid;
+		border-color: transparent;
+		border-top-color: #f1f1f1;
+		-webkit-animation: world 1800ms linear infinite;
+		animation: world 1800ms linear infinite
+	}
+
+	@-webkit-keyframes world {
+		0% {
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg)
+		}
+
+		100% {
+			-webkit-transform: rotate(360deg);
+			transform: rotate(360deg)
+		}
+	}
+
+	@keyframes world {
+		0% {
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg)
+		}
+
+		100% {
+			-webkit-transform: rotate(360deg);
+			transform: rotate(360deg)
+		}
+	}
+	@media screen and (max-width: 390px) {
+		.nav-tabs {
+			position: relative!important;
+			max-width: 100%!important;
+		}	
+		.nav-tabs li .nav-link {
+			font-size: 15px!important;
+			padding: 10px!important;	
+			
+		}
+		.nav.nav-tabs {display: block;}
+		.nav-tabs li{
+			margin-bottom: 5px;
+		}
+		
+		.nav-tabs li .nav-link {
+			font-size: 15px!important;border-bottom: 1px solid #ca0f0f!important;
+			
+		}
+		.nav-tabs li .nav-link.active{background:#ca0f0f!important;color: #fff!important;}
+		.nav-tabs li{
+			margin-bottom: 5px!important;}
+	}
+		
+	</style>
+</head>
+<body>
+	<div class="preloader"  >
+		<div class="preload-content">
+			<div class="world-load"></div>
+			<p class="preload-text">爱的魔力转圈圈!</p>
+		</div>
+	</div>
+</body>
+</html>
